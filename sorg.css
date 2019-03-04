@@ -1,5 +1,5 @@
 
-* {margin:2px; padding:20px; font-family:serif;}
+* {margin:5px; padding:15px; font-family:serif;}
 
 
 * {
@@ -8,14 +8,244 @@
 
 body {
     background-color: #bac2b7;
+    width: auto;
 }
 
 header img {
-    height: 20%;
-    width: 10%;
+    height: 15%;
+    width:8%;
     position: absolute;
-    top: -3%;
+    top: -2%;
     left: 3%; 
+
+}
+
+
+.kolonne {
+    float:left;
+    width: 32%;
+    padding: 5px;
+
+}
+
+.row:after {
+    content:"";
+    display:grid;
+    clear: both;
+}
+
+
+
+
+section {
+    width: 100%;
+    height: 790px;
+    max-height: 1300px;
+    float:center;
+
+}
+
+#pageA {background:#C5D9BD;}
+#pageB {background:#AAC4A1;}
+
+
+h2 {
+    font-size: 20px;
+    color: grey;
+    font-family: 'Cabin', sans-serif;
+}
+
+p {
+    font-size:10px;
+    font-family: 'Cabin', sans-serif;
+    color: dimgray;
+    line-height:22px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #a4af9a;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #a4af9a;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color:#a4af9a;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input::placeholder, textarea::placeholder {
+    color:  #a4af9a;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color:  #a4af9a;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color:  #a4af9a;
+    font-size: 0875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color:  #a4af9a;
+}
+
+/*hover placeholder*/
+
+input:hover::-webkit-input-placeholder, textarea:hover::webkit-input-placeholder {
+    color: #a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color:  #a4af9a;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover::placeholder,textarea:hover::placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,textarea:hover:focus::placeholder {
+    color:#a4af9a;
+}
+
+
+input:hover::placeholder,textarea:hover::placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,textarea:hover:focus::placeholder {
+    color:#a4af9a;
+}
+
+body {
+   font-family: 'Cabin', sans-serif;
+    background: white;
+    color: #a4af9a;
+}
+
+
+#form {
+    position: relative;
+    width: 40%;
+    margin: 30px auto 50px auto;
+}
+
+input {
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+
+
+background:transparent; 
+outline:none;
+color:#bac2b7; 
+    
+    border: solid 1px ligthgrey;
+    border-bottom: none;
+
+    transition: all 0.3 ease-in-out;
+        -webkit-transition: all 0.3sf ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition:all 0.3s ease-in-out;
+}
+
+input:hover {
+    color: grey;
+}
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #a4af9a;
+   font-family: 'Cabin', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px lightgrey;
+    
+     transition: all 0.3 ease-in-out;
+        -webkit-transition: all 0.3 ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition:all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    color: grey;
+}
+
+#submit {
+    width:476px;
+   
+    
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+    
+  font-family: 'Cabin', sans-serif;
+    font-size: 0.875;
+    
+    outline: none;
+    cursor: pointer;
+    
+    border: solid 1px lightgrey;
+    border-top: none;
+}
+
+#submit:hover {
+    background: #C5D9BD;
+    color: grey;
+}
+
+/* Ipad*/
+@media screen and (max-width: 992px) {
+    
+    
+* {margin:5px; padding:20px; font-family:serif;}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bac2b7;
+   width: auto;
+}
+
+header img {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 3px;
+    left: 3px; 
 
 }
 
@@ -45,8 +275,9 @@ header img {
 
 
 section {
-    width: 100%;
-    height: 700px;
+    width: 1000px;
+    height: 1000px;
+    max-height: 1300px;
     float:center;
 
 }
@@ -58,12 +289,12 @@ section {
 h2 {
     font-size: 20px;
     color: grey;
-    font-family: serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 p {
     font-size:10px;
-    font-family: serif; 
+    font-family: 'Cabin', sans-serif;
     color: dimgray;
 }
 
@@ -144,7 +375,7 @@ input:hover:focus::placeholder,textarea:hover:focus::placeholder {
 }
 
 body {
-    font-family: serif;
+   font-family: 'Cabin', sans-serif;
     background: white;
     color: #a4af9a;
 }
@@ -152,12 +383,12 @@ body {
 
 #form {
     position: relative;
-    width: 40%;
+    width: 40px;
     margin: 30px auto 50px auto;
 }
 
 input {
-    font-family: serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 0.875em;
     width: 470px;
     height: 50px;
@@ -192,7 +423,7 @@ textarea {
     outline: none;
     
     color: #a4af9a;
-    font-family: serif;
+   font-family: 'Cabin', sans-serif;
     font-size: 0.875em;
     
     border: solid 1px lightgrey;
@@ -225,22 +456,241 @@ textarea:hover {
 }
 
 #submit:hover {
-    background: #a4af9a;
+    background: #C5D9BD;
+    color: grey;
+}
+}
+
+@media screen and (max-width: 600px) {
+    * {margin:5px; padding:20px; font-family:serif;}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bac2b7;
+   width: auto;
+}
+
+header img {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 3px;
+    left: 3px; 
+
+}
+
+.header {
+    background-color: white;
+    position:absolute;
+    top:0%;
+    left:0%;
+    right: 0%;
+    height: 0%;
+}
+
+.kolonne {
+    float:left;
+    width: 32%;
+    padding: 5px;
+
+}
+
+.row:after {
+    content:"";
+    display:grid;
+    clear: both;
+}
+
+
+
+
+section {
+    width: 1000px;
+    height: 1000px;
+    max-height: 1300px;
+    float:center;
+
+}
+
+#pageA {background:#bac2b7;}
+#pageB {background:#a4af9a;}
+
+
+h2 {
+    font-size: 30px;
+    color: grey;
+    font-family: 'Cabin', sans-serif;
+}
+
+p {
+    font-size:15px;
+    font-family: 'Cabin', sans-serif;
+    color: dimgray;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #a4af9a;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #a4af9a;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color:#a4af9a;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input::placeholder, textarea::placeholder {
+    color:  #a4af9a;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color:  #a4af9a;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color:  #a4af9a;
+    font-size: 0875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color:  #a4af9a;
+}
+
+/*hover placeholder*/
+
+input:hover::-webkit-input-placeholder, textarea:hover::webkit-input-placeholder {
+    color: #a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color:  #a4af9a;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover::placeholder,textarea:hover::placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,textarea:hover:focus::placeholder {
+    color:#a4af9a;
+}
+
+
+input:hover::placeholder,textarea:hover::placeholder {
+    color:#a4af9a;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,textarea:hover:focus::placeholder {
+    color:#a4af9a;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background: white;
+    color: #a4af9a;
+}
+
+
+#form {
+    position: relative;
+    width: 40px;
+    margin: 30px auto 50px auto;
+}
+
+input {
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+
+
+background:transparent; 
+outline:none;
+color:#bac2b7; 
+    
+    border: solid 1px ligthgrey;
+    border-bottom: none;
+
+    transition: all 0.3 ease-in-out;
+        -webkit-transition: all 0.3sf ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition:all 0.3s ease-in-out;
+}
+
+input:hover {
     color: grey;
 }
 
-/*mobil*/
-
-@media only screen (max-width:620px) {
-    .kolonne, #pageA, #pageB, .section, .header img, .col-25, .col-75, .input {
-        width: 100%;
-    }
-   
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
     
+    background: transparent;
+    outline: none;
+    
+    color: #a4af9a;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px lightgrey;
+    
+     transition: all 0.3 ease-in-out;
+        -webkit-transition: all 0.3 ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition:all 0.3s ease-in-out;
 }
 
-@media screen and (max-width:800px) {
-    .kolonne, #pageA,#pageB,.section, .header img, .col-25, .col-75, .input {
-        width: 100%;
+textarea:hover {
+    color: grey;
+}
+
+#submit {
+    width:476px;
+   
+    
+    padding: 0;
+    margin: 10px 0px 0px 0px;
+    
+   font-family: 'Cabin', sans-serif;
+    font-size: 0.875;
+    
+    outline: none;
+    cursor: pointer;
+    
+    border: solid 1px lightgrey;
+    border-top: none;
+}
+
+#submit:hover {
+    background: #a4af9a;
+    color: grey;
 }
 }
