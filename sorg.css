@@ -1,11 +1,14 @@
 
-* {margin:5px; padding:20px; font-family:serif;}
+* {margin:2px; padding:20px; font-family:serif;}
 
 
 * {
     box-sizing: border-box;
 }
 
+body {
+    background-color: #bac2b7;
+}
 
 header img {
     height: 20%;
@@ -43,7 +46,7 @@ header img {
 
 section {
     width: 100%;
-    height: 800px;
+    height: 700px;
     float:center;
 
 }
@@ -169,7 +172,7 @@ color:#bac2b7;
     border-bottom: none;
 
     transition: all 0.3 ease-in-out;
-        -webkit-transition: all 0.3 ease-in-out;
+        -webkit-transition: all 0.3sf ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition:all 0.3s ease-in-out;
 }
@@ -226,36 +229,18 @@ textarea:hover {
     color: grey;
 }
 
+/*mobil*/
 
-
-
-@media screen and (max-width:600px) {
-    .kolonne {
+@media only screen (max-width:620px) {
+    .kolonne, #pageA, #pageB, .section, .header img, .col-25, .col-75, .input {
         width: 100%;
     }
+   
     
-    
-    section {
+}
+
+@media screen and (max-width:800px) {
+    .kolonne, #pageA,#pageB,.section, .header img, .col-25, .col-75, .input {
         width: 100%;
-        height: 800px;
-        float:center;
-
 }
-    
-    
-    header img {
-        height: 20%;
-        width: 10%;
-        position: absolute;
-        top: 3%;
-        left: 3%; 
-
 }
-    
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-    
-}
-
