@@ -1,10 +1,9 @@
 <!doctype html>
-<html lang="da"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     
     <head> 
         <title>sorggruppepåvestfyn</title>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
        <link rel="stylesheet" type="text/css" href="css/sorg.css">
         
      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
@@ -17,7 +16,7 @@
     
     <body> 
     <header>   
-     <img src="billede/logo.png" width="130" height="120"></header>
+     <img src="billede/logo.png" alt="sorggruppe" class="logo"></header>
             
         <section id="pageA"> 
             
@@ -89,7 +88,7 @@
                  </div>
                  
                  <div class="kolonne"> 
-                <img src="billede/kedmand.png" height="400" width="200">
+                <img  src="billede/kedmand.png" alt="sorgmand" class="sorgmand">
                  </div>
                 
                  <div class="kolonne">
@@ -111,17 +110,52 @@
         
         </section>
      
+        <div class="container">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname"><h2>Fornavn</h2></label>
+                    </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Dit fornavn....">
+                    </div>
+                </div>
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="lname"><h2>Efternavn</h2></label>
+                    </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Dit efternavn....">
+                    </div>
+                </div>
+                
+                    <div class="row">
+                    <div class="col-25">
+                        <label for="mail"><h2>E-mail</h2></label>
+                    </div>
+                        <div class="col-75">
+                            <input type="text" id="mail" name="e-mail" placeholder="E-mail">
+                    </div>
+                </div>
+                   
+                
+                
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject"><h2>Spørgsmål</h2></label>
+                        </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder ="Hvad har du på hjertet?" style="height: 200px"></textarea>
+                        </div>
+                </div>
+                    <div class="row">
+                    <input type="submit" value="Send">
+                
+                </div>
+            
+            </form>
     
-        
-            <form id="form" class="topbefore">
-                <input id="name" type="text" placeholder="Navn">
-                    <input id="email" type="text" placeholder="E-mail">
-                        <textarea id="message" type="text" placeholder="Skriv dit spørgsmål her"></textarea>
-                            <input id="submit" type="submit" value="Send">
-        
-        
-        </form>
-        
+        </div>
         
         
         

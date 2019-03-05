@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #bac2b7;
+    background-color: white;
     width: auto;
 }
 
@@ -20,6 +20,11 @@ header img {
 
 }
 
+.sorgmand {
+    height: 400px;
+    width:auto;
+    
+}
 
 .kolonne {
     float:left;
@@ -40,13 +45,12 @@ header img {
 section {
     width: 100%;
     height: 790px;
-    max-height: 1300px;
-    float:center;
+    float:none;
 
 }
 
-#pageA {background:#C5D9BD;}
-#pageB {background:#AAC4A1;}
+#pageA {background:#bbc6b0;}
+#pageB {background:#d0ddc3;}
 
 
 h2 {
@@ -62,167 +66,56 @@ p {
     line-height:22px;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #a4af9a;
-    font-size: 0.875em;
-}
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #a4af9a;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color:#a4af9a;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input::placeholder, textarea::placeholder {
-    color:  #a4af9a;
-    font-size: 0.875em;
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-    color:  #a4af9a;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-    color:  #a4af9a;
-    font-size: 0875em;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color:  #a4af9a;
-}
-
-/*hover placeholder*/
-
-input:hover::-webkit-input-placeholder, textarea:hover::webkit-input-placeholder {
-    color: #a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color:  #a4af9a;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover::placeholder,textarea:hover::placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder,textarea:hover:focus::placeholder {
-    color:#a4af9a;
-}
-
-
-input:hover::placeholder,textarea:hover::placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder,textarea:hover:focus::placeholder {
-    color:#a4af9a;
-}
-
-body {
-   font-family: 'Cabin', sans-serif;
-    background: white;
-    color: #a4af9a;
-}
-
-
-#form {
-    position: relative;
-    width: 40%;
-    margin: 30px auto 50px auto;
-}
-
-input {
-    font-family: 'Cabin', sans-serif;
-    font-size: 0.875em;
-    width: 470px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-
-
-background:transparent; 
-outline:none;
-color:#bac2b7; 
+input [type=text], select, textarea {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
     
-    border: solid 1px ligthgrey;
-    border-bottom: none;
+    label {
+        padding: 12px 12px 12px 0;
+        display:inline-grid;
+    }
+    
+    input [type=submit] {
+        background-color: white;
+        color: white;
+        padding: 1px 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        float: right;
+    }
+    
+    .container {
+        border-radius: 5px;
+        background-color:#D3E0D5;
+        padding: 5px;
+    }
+    
+    .col-25 {
+        float: left;
+        width: 18%;
+        margin-top: 5px;
+    }
+    
+    .col-75 {
+        float: left;
+        width: 60%;
+        margin-top: 4px;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
 
-    transition: all 0.3 ease-in-out;
-        -webkit-transition: all 0.3sf ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition:all 0.3s ease-in-out;
-}
-
-input:hover {
-    color: grey;
-}
-
-textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    max-height: 110px;
-    padding: 15px;
+    }
     
-    background: transparent;
-    outline: none;
-    
-    color: #a4af9a;
-   font-family: 'Cabin', sans-serif;
-    font-size: 0.875em;
-    
-    border: solid 1px lightgrey;
-    
-     transition: all 0.3 ease-in-out;
-        -webkit-transition: all 0.3 ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition:all 0.3s ease-in-out;
-}
-
-textarea:hover {
-    color: grey;
-}
-
-#submit {
-    width:476px;
-   
-    
-    padding: 0;
-    margin: 10px 0px 0px 0px;
-    
-  font-family: 'Cabin', sans-serif;
-    font-size: 0.875;
-    
-    outline: none;
-    cursor: pointer;
-    
-    border: solid 1px lightgrey;
-    border-top: none;
-}
-
-#submit:hover {
-    background: #C5D9BD;
-    color: grey;
-}
 
 /* Ipad*/
 @media screen and (max-width: 992px) {
@@ -278,12 +171,12 @@ section {
     width: 1000px;
     height: 1000px;
     max-height: 1300px;
-    float:center;
+    float:none;
 
 }
 
-#pageA {background:#bac2b7;}
-#pageB {background:#a4af9a;}
+#pageA {background:#bbc6b0;}
+#pageB {background:#d0ddc3;}
 
 
 h2 {
@@ -298,170 +191,15 @@ p {
     color: dimgray;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #a4af9a;
-    font-size: 0.875em;
-}
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #a4af9a;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color:#a4af9a;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input::placeholder, textarea::placeholder {
-    color:  #a4af9a;
-    font-size: 0.875em;
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-    color:  #a4af9a;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-    color:  #a4af9a;
-    font-size: 0875em;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color:  #a4af9a;
-}
-
-/*hover placeholder*/
-
-input:hover::-webkit-input-placeholder, textarea:hover::webkit-input-placeholder {
-    color: #a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color:  #a4af9a;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover::placeholder,textarea:hover::placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder,textarea:hover:focus::placeholder {
-    color:#a4af9a;
-}
-
-
-input:hover::placeholder,textarea:hover::placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder,textarea:hover:focus::placeholder {
-    color:#a4af9a;
-}
-
-body {
-   font-family: 'Cabin', sans-serif;
-    background: white;
-    color: #a4af9a;
-}
-
-
-#form {
-    position: relative;
-    width: 40px;
-    margin: 30px auto 50px auto;
-}
-
-input {
-    font-family: 'Cabin', sans-serif;
-    font-size: 0.875em;
-    width: 470px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-
-
-background:transparent; 
-outline:none;
-color:#bac2b7; 
+    .col-25, .col-75, input [type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
     
-    border: solid 1px ligthgrey;
-    border-bottom: none;
-
-    transition: all 0.3 ease-in-out;
-        -webkit-transition: all 0.3sf ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition:all 0.3s ease-in-out;
-}
-
-input:hover {
-    color: grey;
-}
-
-textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    max-height: 110px;
-    padding: 15px;
     
-    background: transparent;
-    outline: none;
     
-    color: #a4af9a;
-   font-family: 'Cabin', sans-serif;
-    font-size: 0.875em;
     
-    border: solid 1px lightgrey;
-    
-     transition: all 0.3 ease-in-out;
-        -webkit-transition: all 0.3 ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition:all 0.3s ease-in-out;
-}
-
-textarea:hover {
-    color: grey;
-}
-
-#submit {
-    width:476px;
-   
-    
-    padding: 0;
-    margin: 10px 0px 0px 0px;
-    
-    font-family: serif;
-    font-size: 0.875;
-    
-    outline: none;
-    cursor: pointer;
-    
-    border: solid 1px lightgrey;
-    border-top: none;
-}
-
-#submit:hover {
-    background: #C5D9BD;
-    color: grey;
-}
-}
-
-@media screen and (max-width: 600px) {
+@media screen max-width: 600px) {
     * {margin:5px; padding:20px; font-family:serif;}
 
 
@@ -512,14 +250,21 @@ section {
     width: 1000px;
     height: 1000px;
     max-height: 1300px;
-    float:center;
+    float:none;
 
 }
 
-#pageA {background:#bac2b7;}
-#pageB {background:#a4af9a;}
+#pageA {background:#bbc6b0;}
+#pageB {background:#d0ddc3;}
 
-
+    .col-25, .col-75, input [type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    
+    
+    
 h2 {
     font-size: 30px;
     color: grey;
@@ -532,165 +277,5 @@ p {
     color: dimgray;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #a4af9a;
-    font-size: 0.875em;
-}
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #a4af9a;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color:#a4af9a;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input::placeholder, textarea::placeholder {
-    color:  #a4af9a;
-    font-size: 0.875em;
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-    color:  #a4af9a;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-    color:  #a4af9a;
-    font-size: 0875em;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color:  #a4af9a;
-}
-
-/*hover placeholder*/
-
-input:hover::-webkit-input-placeholder, textarea:hover::webkit-input-placeholder {
-    color: #a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color:  #a4af9a;
-}
-
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover::placeholder,textarea:hover::placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder,textarea:hover:focus::placeholder {
-    color:#a4af9a;
-}
-
-
-input:hover::placeholder,textarea:hover::placeholder {
-    color:#a4af9a;
-    font-size: 0.875em;
-}
-
-input:hover:focus::placeholder,textarea:hover:focus::placeholder {
-    color:#a4af9a;
-}
-
-body {
-    font-family: 'Cabin', sans-serif;
-    background: white;
-    color: #a4af9a;
-}
-
-
-#form {
-    position: relative;
-    width: 40px;
-    margin: 30px auto 50px auto;
-}
-
-input {
-    font-family: 'Cabin', sans-serif;
-    font-size: 0.875em;
-    width: 470px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-
-
-background:transparent; 
-outline:none;
-color:#bac2b7; 
     
-    border: solid 1px ligthgrey;
-    border-bottom: none;
-
-    transition: all 0.3 ease-in-out;
-        -webkit-transition: all 0.3sf ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition:all 0.3s ease-in-out;
-}
-
-input:hover {
-    color: grey;
-}
-
-textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    max-height: 110px;
-    padding: 15px;
-    
-    background: transparent;
-    outline: none;
-    
-    color: #a4af9a;
-    font-family: 'Cabin', sans-serif;
-    font-size: 0.875em;
-    
-    border: solid 1px lightgrey;
-    
-     transition: all 0.3 ease-in-out;
-        -webkit-transition: all 0.3 ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition:all 0.3s ease-in-out;
-}
-
-textarea:hover {
-    color: grey;
-}
-
-#submit {
-    width:476px;
-   
-    
-    padding: 0;
-    margin: 10px 0px 0px 0px;
-    
-   font-family: 'Cabin', sans-serif;
-    font-size: 0.875;
-    
-    outline: none;
-    cursor: pointer;
-    
-    border: solid 1px lightgrey;
-    border-top: none;
-}
-
-#submit:hover {
-    background: #a4af9a;
-    color: grey;
-}
-}
